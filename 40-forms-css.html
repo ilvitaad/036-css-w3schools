@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<style>
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+label {display: block;}
+
+input[type=text], select {
+    width: 100%; /*ancho de entrada*/
+    padding: 12px; /*relleno de entrada*/
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc; /*borde de entrada*/
+    border-radius: 4px; /*borde de entrada*/
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+</style>
+<body>
+
+<h2>Style an HTML Form with CSS</h2>
+
+<form action="/action_page.php">
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+  <label for="country">Country</label>
+  <select id="country" name="country">
+    <option value="australia">Australia</option>
+    <option value="canada">Canada</option>
+    <option value="usa">USA</option>
+  </select>
+  
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+<!--ancho de entrada de estilo-->
+<!--el ancho predeterminado de un campo de texto es de 20 caracteres-->
+<style> 
+input {
+  width: 100%;
+}
+</style>
+
+<!--relleno de entrada de estilo-->
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+<!--borde de entrada-->
+input[type=text] {
+  border: 2px solid red;
+  border-radius: 8px;
+}
+
+<!--Color de fondo y color de la entrada-->
+input[type=text] {
+  background-color: #3CBC8D;
+  color: white;
+}
+
+<!--Enfoque de formulario e iconos-->
+
+<!--Entrada de estilo con enfoque-->
+<!--con este input al seleccionar se pone azul-->
+input[type=text]:focus {
+  background-color: lightblue;
+}
+
+<!--con este input al seleccionar se pone el borde en gris-->
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+<!--Estilo de entrada con icono/imagen-->
+input[type=text] {
+  background-color: white;
+  background-image: url('searchicon.png'); //representa el icono
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+<!--Entrada de búsqueda animada-->
+<style> 
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+</style>
+
+<!--elementos de formularios-->
+<!--estilo area de texto-->
+<style> 
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+</style>
+
+<!--Diseñar un menú desplegable-->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+select {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Styling a Dropdown Menu</h2>
+
+<form>
+  <select id="country" name="country">
+  <option value="au">Australia</option>
+  <option value="ca">Canada</option>
+  <option value="usa">USA</option>
+  </select>
+</form>
+
+</body>
+</html>
+
+
+<!--Botones de formulario de estilo-->
+<style> 
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+
+<!--Formulario responsivo-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.responsive-form {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 4px;
+  border: 2px solid #04AA6D;;
+  background-color:  #f2f2f2;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+label {
+  min-width: 48%;
+  margin-bottom: 10px;
+}
+
+input[type=text], select {
+  min-width: 45%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+textarea {
+  min-width: 45%;
+  height: 150px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  label,
+  input[type=text],
+  input[type=submit],
+  select, textarea {
+    flex: 100%;
+    min-width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+<h2>Responsive Form</h2>
+<p>Resize the screen to see the form layout change!</p>
+
+<div class="responsive-form">
+
+ <form action="/action_page.php">
+   <label for="fname">First Name:</label>
+   <input type="text" id="fname" name="fname" placeholder="Your first name">
+
+   <label for="lname">Last Name:</label>
+   <input type="text" id="lname" name="lname" placeholder="Your last name">
+
+   <label for="country">Country:</label>
+   <select id="country" name="country">
+     <option value="australia">Australia</option>
+     <option value="canada">Canada</option>
+     <option value="usa">USA</option>
+    </select>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Write something.."></textarea>
+
+    <input type="submit" value="Submit">
+ </form>
+
+</div>
+
+</body>
+</html>
+
+
