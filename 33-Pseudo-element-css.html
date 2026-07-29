@@ -1,0 +1,73 @@
+<!--::first-linepseudoelemento se utiliza para añadir un estilo especial a la primera línea de un texto.-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::first-line {
+  color: red;
+  font-variant: small-caps;
+  font-size: 19px;  
+}
+</style>
+</head>
+<body>
+
+<h2>Using ::first-line</h2>
+
+<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+</body>
+</html>
+
+<!--::first-letterpseudoelemento se utiliza para añadir un estilo especial a la primera letra de un texto.-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+</style>
+</head>
+<body>
+
+<h2>Using ::first-letter</h2>
+
+<p>You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+
+</body>
+</html>
+
+<!--::beforepseudoelemento se utiliza para insertar contenido antes del contenido de un elemento específico.-->
+<style>
+h3::before {
+  content: url(smiley.gif);
+}
+</style>
+
+<!-- ::afterpseudoelemento se utiliza para insertar contenido después del contenido de un elemento específico.-->
+h3::after {
+  content: url(smiley.gif);
+}
+
+<!--::markerpseudoelemento se utiliza para dar estilo a los marcadores de los elementos de la lista.-->
+<style>
+::marker { 
+  color: red;
+  font-size: 23px;
+}
+</style>
+
+<!--::selection pseudoelemento se utiliza para dar estilo a la parte de un texto que selecciona el usuario.-->
+<style>
+::selection {
+  color: red;
+  background: yellow;
+}
+</style>
+
+<!-- ::backdroppseudoelemento se utiliza para dar estilo al cuadro de visualización que se encuentra detrás de un cuadro de diálogo o un elemento emergente.-->
+dialog::backdrop {
+  background-color: lightgreen;
+}
